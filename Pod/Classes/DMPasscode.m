@@ -173,8 +173,8 @@ static NSBundle* bundle;
         if ([code isEqualToString:[[DMKeychain defaultKeychain] objectForKey:KEYCHAIN_NAME]]) {
             [self closeAndNotify:YES];
         } else {
-            [_passcodeViewController setErrorMessage:[NSString stringWithFormat:NSLocalizedString(@"dmpasscode_n_left", nil), 2 - _count]];
-            [_passcodeViewController reset];
+//            [_passcodeViewController setErrorMessage:[NSString stringWithFormat:NSLocalizedString(@"dmpasscode_n_left", nil), 2 - _count]];
+  //          [_passcodeViewController reset];
             if (_count >= 2) { // max 3 attempts
                 [self closeAndNotify:NO];
             }
